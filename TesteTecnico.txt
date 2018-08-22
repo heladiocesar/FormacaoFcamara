@@ -1,23 +1,51 @@
 1) Se você tivesse 5 diferentes arquivos de folhas de estilo, qual seria a
 melhor forma de integrá-los no site?
+RESPOSTA: Juntaria todas elas em apenas uma folha de estilo e posteriormente faria o link externo para dentro do HTML.
 
 2) Fale 3 formas de diminuir o page load (tempo de carregamento real e
 percebido).
+RESPOSTA: 1- Otimizar ós códigos HTML, CSS e JavaScript 2- Compressão de imagens 3- Uso do cache
 
 3) Quais ferramentas você usa para testar a performance do seu código?
+RESPOSTA: Page Speed Insights do Google e Pingdom Website Speed Test
 
 4) Considere o HTML5 como uma plataforma web aberta. Quais são os
 blocos de construção de HTML5?
+RESPOSTA:
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+<head>
+<meta charset=”UTF-8”>
+<link rel=”stylesheet” type=”text/css” href=”estilo.css”>
+<title></title>
+</head>
+<body>
+</body>
+</html>
 
 5) Você pode explicar a diferença entre GET e POST?
+RESPOSTA: GET- envia os parâmetros atraves do cabeçalho da requisição (você pode vê los na URL) enquanto POST - envia os parâmetros no corpo da requisição (você não vê as informações na URL).
 
 6) Liste quantas propriedades display você puder lembrar.
+RESPOSTA: display:inline, display:none, display:block
 
 7) Qual a diferença entre inline e inline-block?
+RESPOSTA: display: inline; não permitem a definição nem da largura e nem da altura, permitem a exibição de outros elementos ao seu lado. 
+display: inline-block; permitem que outros elementos sejam definidos ao seu lado, e permitem o redimensionamento tanto da largura quanto de sua altura.
 
 8) Qual a diferença entre elementos posicionados de forma relativa, fixa,
 absoluta e estática?
 
-9) Qual a diferença entre .call e .apply?
+position: fixed; irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente.
 
-10) Qual a diferença entre == e ===?
+position: relative; precisa de um ponto para iniciar o cálculo da coordenada para assim posicionar o elemento na tela, o ponto base é o canto superior esquerdo do elemento.
+
+position: absolute; com ele você pode posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.
+
+position: static; esse é o valor default de todo elemento HTML, ou seja, ele vai seguir o fluxo comum da sua página.
+
+9) Qual a diferença entre .call e .apply?
+RESPOSTA: A diferença está nos parâmetros, Apply invoca uma função com o this (contexto) e um array com os parâmetros da função, já o Call utiliza como primeiro parâmetro o this (contexto) e os próximos são os parâmetros da função.
+
+10) Qual a diferença entre "=="" e "==="?
+RESPOSTA: "==" compara os valores entre si, enquanto "===" compara os valores e o tipo da variável, se é do tipo int, string ou float.
